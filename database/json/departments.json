@@ -1,0 +1,46 @@
+ [
+      {
+        "name": "College of Agricultural Sciences and Food Technology (CoAF)",
+        "departments": [
+          "Crop Sciences and Beekeeping Technology",
+          "Agricultural Economics and Business",
+          "Agricultural Engineering",
+          "Food Science and Technology"
+        ]
+      },
+      {
+        "name": "College of Engineering and Technology (CoET)",
+        "departments": [
+          "Chemical and Process Engineering",
+          "Structural and Construction Engineering (SCE) Transportation and Geotechnical Engineering",
+          "Electrical Engineering",
+          "Mechanical and Industrial Engineering"
+        ]
+      },
+      {
+        "name": "College of Humanities (CoHU)",
+        "departments": [
+          "Foreign Languages and Linguistics",
+          "Literature",
+          "Creative Arts"
+        ]
+      },
+      {
+        "name": "College of Information and Communication Technologies (CoICT)",
+        "departments": [
+          "Computer Science and Engineering",
+          "Electronics and Telecommunications Engineering"
+        ]
+      },
+      {
+        "name": "College of Natural and Applied Sciences (CoNAS)",
+        "departments": [
+          "Botany",
+          "Chemistry",
+          "Molecular Biology and Biotechnology",
+          "Zoology and Wildlife Conservation"
+        ]
+      }
+    ]
+  
+  

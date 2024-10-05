@@ -1,0 +1,97 @@
+{
+    "program":[
+        {"name":"NECTA"},
+        {"name":"IB"},
+        {"name":"Cambridge"}
+    ],
+    "levels": [
+        {"name":"Primary School","program":1},
+        {"name":"Secondary School (O-Level)", "program":1},
+        {"name":"High School (A-Level)","program":1}
+      ],
+      
+        "grades": [
+          
+            {"name": "1", "level": 1},
+            {"name": "2", "level": 1},
+            {"name": "3", "level": 1},
+            {"name": "4", "level": 1},
+            {"name": "5", "level": 1},
+            {"name": "6", "level": 1},
+            {"name": "7", "level": 1},
+            {"name": "Form I", "level": 2},
+            {"name": "Form II", "level": 2},
+            {"name": "Form III", "level": 2},
+            {"name": "Form IV", "level": 2},
+            {"name": "Form V", "level": 3},
+            {"name": "Form VI", "level": 3}
+          
+        ]
+      ,
+      
+        "subjects":  [
+            {"name": "English", "level": 1},
+            {"name": "French", "level": 1},
+            {"name": "Geography", "level": 1},
+            {"name": "Science", "level": 1},
+            {"name": "Mathematics", "level": 1},
+            {"name": "Arts & Sports", "level": 1},
+            {"name": "Historia ya Tanzania", "level": 1},
+            {"name": "Social Studies", "level": 1},
+            {"name": "Civic & Moral Education", "level": 1},
+            {"name": "Arabic", "level": 1},
+            {"name": "Various Subjects (Grades 1-12)", "level": 1},
+            {"name": "Biology", "level": 2},
+            {"name": "Physics", "level": 2},
+            {"name": "Chemistry", "level": 2},
+            {"name": "Agriculture", "level": 2},
+            {"name": "Computer Science", "level": 2},
+            {"name": "Geography", "level": 2},
+            {"name": "Historia ya Tanzania na Maadili", "level": 2},
+            {"name": "History", "level": 2},
+            {"name": "Bible Knowledge", "level": 2},
+            {"name": "Elimu ya Dini ya Kiislamu", "level": 2},
+            {"name": "Mathematics", "level": 2},
+            {"name": "Additional Mathematics", "level": 2},
+            {"name": "Kiswahili", "level": 2},
+            {"name": "English Language", "level": 2},
+            {"name": "Chinese", "level": 2},
+            {"name": "Arabic", "level": 2},
+            {"name": "French", "level": 2},
+            {"name": "Literature in English", "level": 2},
+            {"name": "Fasihi ya Kiswahili", "level": 2},
+            {"name": "Business Studies", "level": 2},
+            {"name": "Bookkeeping", "level": 2},
+            {"name": "Textile and Garment Construction", "level": 2},
+            {"name": "Food and Nutrition", "level": 2},
+            {"name": "History", "level": 3},
+            {"name": "Geography", "level": 3},
+            {"name": "Bible Knowledge", "level": 3},
+            {"name": "Islamic Knowledge", "level": 3},
+            {"name": "Historia ya Tanzania na Maadili", "level": 3},
+            {"name": "Kiswahili", "level": 3},
+            {"name": "English", "level": 3},
+            {"name": "Arabic", "level": 3},
+            {"name": "French", "level": 3},
+            {"name": "Chinese", "level": 3},
+            {"name": "Academic Communication", "level": 3},
+            {"name": "Kiswahili Literature", "level": 3},
+            {"name": "Literature in English", "level": 3},
+            {"name": "Physics", "level": 3},
+            {"name": "Chemistry", "level": 3},
+            {"name": "Biology", "level": 3},
+            {"name": "Agriculture", "level": 3},
+            {"name": "Food and Nutrition", "level": 3},
+            {"name": "Mathematics", "level": 3},
+            {"name": "Basic Applied Mathematics", "level": 3},
+            {"name": "Computer Science", "level": 3},
+            {"name": "Economics", "level": 3},
+            {"name": "Business Studies", "level": 3},
+            {"name": "Accountancy", "level": 3}
+          ]
+       ,
+    "extracurricular": 
+    [{"name":"Fine Art"}, {"name":"Music"}, {"name":"Performing Arts"}, {"name":"Sports"}, {"name":"Textile Garment Construction"}]
+    
+  
+}

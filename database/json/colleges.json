@@ -1,0 +1,193 @@
+ [
+      {
+        "name": 1,
+        "programs": [
+          {
+            "name": "Bachelor of Science in Beekeeping Science and Technology (BSc BST)",
+            "duration": 3,
+            "department": 1
+          },
+          {
+            "name": "Bachelor of Science in Crop Science and Technology (BSc CST)",
+            "duration": 3,
+            "department": 1
+          },
+          {
+            "name": "Bachelor of Science in Agricultural and Natural Resources Economics and Business (BSc ANEB)",
+            "duration": 3,
+            "department": 4
+          },
+          {
+            "name": "Bachelor of Science in Agricultural Engineering and Mechanization (BSc AEM)",
+            "duration": 4,
+            "department": 3
+          },
+          {
+            "name": "Bachelor of Science in Food Science and Technology (BSc FST)",
+            "duration": 4,
+            "department": 4
+          }
+        ]
+      },
+      {
+        "name": 2,
+        "programs": [
+          {
+            "name": "Bachelor of Science in Chemical and Process Engineering (BSc CPE)",
+            "duration": 4,
+            "department": 5
+          },
+          {
+            "name": "Bachelor of Science in Civil Engineering (BSc CE)",
+            "duration": 4,
+            "department": 6
+          },
+          {
+            "name": "Bachelor of Science in Electrical Engineering (BSc EE)",
+            "duration": 4,
+            "department": 7
+          },
+          {
+            "name": "Bachelor of Science in Mechanical Engineering (BSc ME)",
+            "duration": 4,
+            "department": 8
+          },
+          {
+            "name": "Bachelor of Science in Industrial Engineering (BSc IE)",
+            "duration": 4,
+            "department": 8
+          },
+          {
+            "name": "Bachelor of Science in Textile Design and Technology (BSc TXD)",
+            "duration": 4,
+            "department": 8
+          },
+          {
+            "name": "Bachelor of Science in Textile Engineering (BSc TXE)",
+            "duration": 4,
+            "department": 8
+          },
+          {
+            "name": "Bachelor of Architecture (BArch)",
+            "duration": 4,
+            "department": 8
+          },
+          {
+            "name": "Bachelor of Science in Quantity Surveying (BSc QS)",
+            "duration": 4,
+            "department": 8
+          },
+          {
+            "name": "Bachelor of Science in Geomatics (BSc Geom)",
+            "duration": 4,
+            "department": 8
+          }
+        ]
+      },
+      {
+        "name": 3,
+        "programs": [
+          {
+            "name": "B. A. (Language Studies)",
+            "duration": 3,
+            "department": 9
+          },
+          {
+            "name": "B. A. (Literature)",
+            "duration": 3,
+            "department": 10
+          },
+          {
+            "name": "B. A. (Art and Design)",
+            "duration": 3,
+            "department": 11
+          },
+          {
+            "name": "B. A. (Music)",
+            "duration": 3,
+            "department": 11
+          },
+          {
+            "name": "B. A. (Theatre Arts)",
+            "duration": 3,
+            "department": 11
+          },
+          {
+            "name": "B. A. (Film and Television Studies)",
+            "duration": 3,
+            "department": 11
+          }
+        ]
+      },
+      {
+        "name": 4,
+        "programs": [
+          {
+            "name": "Bachelor of Science in Computer Science (BSc Comp. Sci.)",
+            "duration": 3,
+            "department": 12
+          },
+          {
+            "name": "Bachelor of Science in Business Information Technology (BSc BIT)",
+            "duration": 3,
+            "department": 12
+          },
+          {
+            "name": "Bachelor of Science in Electronics Science and Communication (BSc ESC)",
+            "duration": 3,
+            "department": 13
+          },
+          {
+            "name": "Bachelor of Science in Computer Engineering and Information Technology (BSc CIT)",
+            "duration": 4,
+            "department": 12
+          },
+          {
+            "name": "Bachelor of Science in Telecommunications Engineering (BSc Telecoms)",
+            "duration": 4,
+            "department": 13
+          },
+          {
+            "name": "Bachelor of Science in Electronics Engineering (BSc EE)",
+            "duration": 4,
+            "department": 13
+          }
+        ]
+      },
+      {
+        "name": 5,
+        "programs": [
+          {
+            "name": "Bachelor of Science with Education (BScEd)",
+            "duration": 4,
+            "department": 14
+          },
+          {
+            "name": "Bachelor of Science in Chemistry (BSc Chem)",
+            "duration": 3,
+            "department": 15
+          },
+          {
+            "name": "Bachelor of Science in Petroleum Chemistry (BSc P Chem)",
+            "duration": 3,
+            "department": 15
+          },
+          {
+            "name": "Bachelor of Science in Molecular Biology and Biotechnology (BSc Mol Bio BTech)",
+            "duration": 4,
+            "department": 16
+          },
+          {
+            "name": "Bachelor of Science in Applied Zoology (BSc App Zoo)",
+            "duration": 3,
+            "department": 17
+          },
+          {
+            "name": "Bachelor of Science in Wildlife Science and Conservation (BSc WSC)",
+            "duration": 3,
+            "department": 17
+          }
+        ]
+      }
+    ]
+  
