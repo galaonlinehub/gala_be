@@ -11,6 +11,8 @@ use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\ProgrammeController;
 use App\Http\Controllers\AddressController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
+use App\Http\Controllers\Book\BookCategoryController;
+use App\Http\Controllers\Book\BookController;
 use App\Http\Controllers\K12\EducationProgrammeController;
 use App\Http\Controllers\K12\LevelController;
 use App\Http\Controllers\K12\SubjectController;
@@ -71,6 +73,15 @@ Route::post('/course_programme', [ProgrammeController::class, 'store']);
 
 // });
 
+
+// books
+Route::post('book_category', [BookCategoryController::class,'store']);
+Route::get('book_categories', [BookCategoryController::class,'index']);
+
+Route::get('book/{book}', [BookController::class,'show']);
+Route::get('categories_books', [BookController::class,'index']);
+Route::get('category_books/{bookCategory}', [BookController::class,'showCategoryBooks']);
+
 // K12 routes
 Route::prefix('/k12')->group(function(){
     // subjects
@@ -88,7 +99,7 @@ Route::prefix('/k12')->group(function(){
 
     // grade
     Route::get('/grades',[GradeController::class,'index']);
-    Route::get('/level_grades/{level}',[GradeController::class,'levelGrades']);
+    Route::get('/grades/{level}',[GradeController::class,'levelGrades']);
     Route::post('/grade',[GradeController::class,'store']);
 
 

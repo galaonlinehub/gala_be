@@ -3,7 +3,8 @@
 namespace App\Http\Controllers\Book;
 
 use App\Http\Controllers\Controller;
-use App\Models\Book;
+use App\Models\Book\Book;
+use App\Models\Book\BookCategory;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Exception;
@@ -15,10 +16,7 @@ class BookController extends Controller
         {
             $validator = Validator::make($request->all(),[
                 "title"=>"required|string",
-                "isbn"=>"required|string",
-                "author"=>"required|string",
-                "type"=>"required",
-                "published_date"=>"required"
+                "book_path"=>"required|string"
                
             ]);
 
@@ -27,7 +25,7 @@ class BookController extends Controller
                 return response()->json(['message' => 'Validation failed', 'errors' => $validator->errors()], 422);
             }
 
-            $book = Book::create(["title"=>$request->title,"isbn"=>$request->isbn,"author"=>$request->author,"type"=>$request->type,"published_date"=>$request->published_date]);
+            $book = Book::create(["title"=>$request->title]);
 
         return response()->json($book,200);
         }
@@ -42,6 +40,17 @@ class BookController extends Controller
 
         return response()->json($books,200);
     }
+
+    public function show(Book $book){
+        return response()->json($book,200);
+    }
+
+    public function showCategoryBooks(BookCategory $bookCategory){
+        
+        return response()->json($bookCategory->books,200); 
+
+    }
+
     
     
     }

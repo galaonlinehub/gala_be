@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Book;
 
 use App\Http\Controllers\Controller;
-use App\Models\BookCategory;
+use App\Models\Book\BookCategory;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Exception;

@@ -2,10 +2,12 @@
 
 namespace Database\Seeders;
 
-use App\Models\BookCategory;
+use App\Models\Book\BookCategory;
+use App\Models\Book\Book;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Log;
 
 class BookSeeder extends Seeder
 {
@@ -14,31 +16,64 @@ class BookSeeder extends Seeder
      */
     public function run(): void
     {
-        $categories = file_get_contents(database_path('json/books.json'));
-        $data_categories = json_decode($categories, true);
 
-        BookCategory::insert($data_categories);
 
-        $directoryPath = 'json/Archeology';
+    $baseDirectoryPath = public_path('storage/books');
 
-        // Get all PDF files in the directory
-        $files = Storage::files($directoryPath);
+    try {
+        
+        $categories = File::directories($baseDirectoryPath);
+    
+        foreach ($categories as $categoryPath) {
+            
+            $categoryName = basename($categoryPath);
 
-        // Loop through each file and store metadata in the database
-        foreach ($files as $file) {
-            if (pathinfo($file, PATHINFO_EXTENSION) === 'pdf') {
-                // Get the file name
-                $fileName = pathinfo($file, PATHINFO_BASENAME);
-
-                // Store the file info in the database
-                // Pdf::create([
-                //     'file_name' => $fileName,
-                //     'file_path' => $file,
-                // ]);
-
-                // $this->info("Imported: {$fileName}");
+            
+            $files = File::files($categoryPath);
+        
+            $bookFiles = [];
+        
+            foreach ($files as $file) {
+                
+            
+                if (strtolower($file->getExtension()) === 'pdf') {
+                $fileName = $file->getFilename();
+                
+                
+                $existingBook = Book::where('title', $fileName)
+                                    ->first();
+                                   
+                if (!$existingBook) {
+                    $bookFiles[] = [
+                        "title" => pathinfo($fileName, PATHINFO_FILENAME), // Title without extension
+                        "book_path" => "storage/books/" . $categoryName . "/" . $fileName,
+                        "created_at" => now(),
+                        "updated_at" => now(),
+                    ];
+                }
             }
         }
+
+            $category = BookCategory::create(["name"=>$categoryName,"created_at"=>now(),"updated_at"=>now()]);
+            
+            
+            if (!empty($bookFiles)) {
+                Book::insert($bookFiles);
+                
+                $bookTitles = array_column($bookFiles, 'title');
+
+                
+                $books = Book::whereIn('title', $bookTitles)->get();
+            
+
+                $category->books()->attach($books->pluck('id')->toArray());
+            }
+        }
+    
+        } catch (\Exception $e) {
+        
+        Log::error("Error processing books: " . $e->getMessage());
+}
 
 
     }
